@@ -16,8 +16,8 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HF }}
-        run: git remote add space https://huggingface.co/4019charan/Survival-app
+        run: git remote add space https://4019Charan:$HF@huggingface.co/spaces/4019Charan/Survival-app
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run: git push --force https://huggingface.co/4019charan/Survival-app main
+        run: git push --force https://huggingface.co/4019Charan/Survival-app main
