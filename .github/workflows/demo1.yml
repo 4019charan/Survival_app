@@ -20,4 +20,4 @@ jobs:
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run: git push --force https://huggingface.co/4019Charan/Survival-app main
+        run: git push --force https://4019Charan:$HF@huggingface.co/spaces/4019Charan/Survival-app main
